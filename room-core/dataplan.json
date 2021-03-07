@@ -1,0 +1,40 @@
+{,,,}
+// User / Flow Account
+// users_collection
+
+{
+    '_id': ObjectId(), // Flow-core's unique ID for this user
+    'status': String, // 'complete' || 'partial' || 'new'
+
+    'email_addr': String, // e.g. 'gauravdewan@live.com',
+    'full_name': String, // e.g. 'Gaurav Dewan',
+    'birthday': DateTime,
+    'member_since': DateTime, // E.G datetime.datetime(2019, 7, 7, 18, 16, 1, 491000),
+    'pic': ''
+    'one_liner': String, // 
+
+    'device_token': String,// e.g. 'ExponentPushToken[j2OxF7Gh4z-iMUinF8geWw]',
+}
+
+// Room
+
+{
+    '_id': ObjectId(), // room-core's unique ID for this room
+    'name': String, // the presentable name of the room
+
+    'location': {
+        'lat': Double,
+        'lng': Double
+    },
+
+    'population': Integer, // number of people currently in the room
+    'pop_time': [{'p': Integer, 't': DateTime}], // a time series of the population in this room
+
+    'photo': {
+        'height': Integer,
+        'width': Integer,
+        'ggl_reference': String, // the google reference for the photo (eg CkQ0AAAAXZ2EpZCILAjxU9ByRe09HrpHQYAo17Fwg_KPOu2P66mFbCOSO8qHKjRbUJnp8FBF1fqY0jArOod1eeewuBz1ThIQf0vcrRARciFSozA5TqLbXhoUHe30YoVr1C0rXMj6GBWtfiHaudg)
+    }
+    'members': [] //
+    'ggl_place_id': String, // eg ChIJJ4k4r2JudkgR1JAyeHvuiZk
+}

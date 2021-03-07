@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Room",
+    "slug": "room-app",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "roomapp",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.roomtheapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show you nearby rooms."
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.roomtheapp",
+      "versionCode": 2,
+
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android_icon.png",
+        "backgroundColor": "#000000"
+      },
+      "icon": "./assets/icon.png"
+    }
+  }
+}
